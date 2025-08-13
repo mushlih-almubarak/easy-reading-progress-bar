@@ -2,6 +2,8 @@
 
 A simple, lightweight, and highly compatible reading progress bar for your WordPress posts. This plugin is designed to be feather-light, incredibly fast, and work with the vast majority of WordPress themes.
 
+[![CodeFactor](https://www.codefactor.io/repository/github/mushlih-almubarak/easy-reading-progress-bar/badge)](https://www.codefactor.io/repository/github/mushlih-almubarak/easy-reading-progress-bar)
+
 ## ✨ Key Features
 
 * **Extremely Lightweight:** No extra CSS or JavaScript files are loaded. All code is inlined and optimized for peak performance.
