@@ -17,7 +17,7 @@ Easy Reading Progress Bar adds a sleek, customizable progress bar to your single
 
 **Key Features:**
 
-* **Extremely Lightweight:** No extra CSS or JavaScript files loaded. All code is inline and optimized for performance.
+* **Extremely Lightweight:** No extra CSS or JavaScript files loaded. All code is inlined and optimized for performance.
 * **Highly Compatible:** Works seamlessly with many themes.
 * **Customizable:** Easily change the progress bar's color and position (top or bottom of the page) from a simple settings page.
 * **Dependency-Free:** The frontend script does not rely on jQuery, ensuring it won't conflict with other plugins or slow down your site.
@@ -63,6 +63,6 @@ Example code to add to your theme's `functions.php` file to change the height to
 
 = 1.0.0 =
 * Initial public release.
-* Features a easy, simple, lightweight, dependency-free reading progress bar for single posts.
+* Features an easy, simple, lightweight, dependency-free reading progress bar for single posts.
 * Includes a settings page to customize bar color and position (top or bottom).
 * Designed for high compatibility with modern block themes and popular classic themes.
