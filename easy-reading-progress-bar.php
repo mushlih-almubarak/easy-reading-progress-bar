@@ -8,7 +8,7 @@
  * Author URI:        https://github.com/mushlih-almubarak
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       easy-reading-progress-bar
+ * Text Domain:       wp-easy-reading-progress-bar
  */
 
 // If this file is accessed directly, abort.
@@ -25,7 +25,7 @@ if (! defined('ABSPATH')) {
 function erpb_add_settings_link($links)
 {
     $settings_url  = esc_url(admin_url('options-general.php?page=easy-reading-progress-bar'));
-    $settings_link = '<a href="' . $settings_url . '">' . __('Settings', 'easy-reading-progress-bar') . '</a>';
+    $settings_link = '<a href="' . $settings_url . '">' . __('Settings', 'wp-easy-reading-progress-bar') . '</a>';
     array_unshift($links, $settings_link);
     return $links;
 }
@@ -131,8 +131,8 @@ add_action('wp_footer', 'erpb_add_footer_html');
 function erpb_add_admin_menu()
 {
     add_options_page(
-        __('Easy Reading Progress Bar', 'easy-reading-progress-bar'), // Page Title
-        __('Reading Progress Bar', 'easy-reading-progress-bar'),  // Menu Title
+        __('Easy Reading Progress Bar', 'wp-easy-reading-progress-bar'), // Page Title
+        __('Reading Progress Bar', 'wp-easy-reading-progress-bar'),  // Menu Title
         'manage_options',                                           // Capability
         'easy-reading-progress-bar',                                // Menu Slug
         'erpb_options_page_html'                                    // Callback function
@@ -169,7 +169,7 @@ function erpb_settings_init()
     // Add the color picker field.
     add_settings_field(
         'erpb_color_field',         // ID
-        __('Bar Color', 'easy-reading-progress-bar'), // Title
+        __('Bar Color', 'wp-easy-reading-progress-bar'), // Title
         'erpb_color_field_cb',      // Callback
         'easy-reading-progress-bar', // Page slug
         'erpb_main_section'         // Section
@@ -178,7 +178,7 @@ function erpb_settings_init()
     // Add the position radio button field.
     add_settings_field(
         'erpb_location_field',      // ID
-        __('Bar Position', 'easy-reading-progress-bar'), // Title
+        __('Bar Position', 'wp-easy-reading-progress-bar'), // Title
         'erpb_location_field_cb',   // Callback
         'easy-reading-progress-bar', // Page slug
         'erpb_main_section'         // Section
@@ -204,12 +204,12 @@ function erpb_location_field_cb()
 ?>
     <label>
         <input type="radio" name="erpb_location_setting" value="top" <?php checked($location, 'top'); ?>>
-        <?php esc_html_e('Top of the page', 'easy-reading-progress-bar'); ?>
+        <?php esc_html_e('Top of the page', 'wp-easy-reading-progress-bar'); ?>
     </label>
     <br>
     <label>
         <input type="radio" name="erpb_location_setting" value="bottom" <?php checked($location, 'bottom'); ?>>
-        <?php esc_html_e('Bottom of the page', 'easy-reading-progress-bar'); ?>
+        <?php esc_html_e('Bottom of the page', 'wp-easy-reading-progress-bar'); ?>
     </label>
 <?php
 }
@@ -253,7 +253,7 @@ function erpb_options_page_html()
             echo wp_kses(
                 sprintf(
                     /* translators: 1: Heart icon (HTML span), 2: Author name (HTML link). */
-                    __('Made with %1$s by %2$s from Indonesia', 'easy-reading-progress-bar'),
+                    __('Made with %1$s by %2$s from Indonesia', 'wp-easy-reading-progress-bar'),
                     '<span style="color: #e25555;">&hearts;</span>',
                     '<a href="https://github.com/mushlih-almubarak" target="_blank" rel="noopener noreferrer">Mushlih Almubarak</a>'
                 ),
@@ -271,7 +271,7 @@ function erpb_options_page_html()
             // Output the settings sections and their fields.
             do_settings_sections('easy-reading-progress-bar');
             // Output the submit button.
-            submit_button(__('Save Settings', 'easy-reading-progress-bar'));
+            submit_button(__('Save Settings', 'wp-easy-reading-progress-bar'));
             ?>
         </form>
 
