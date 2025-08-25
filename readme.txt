@@ -66,3 +66,8 @@ Example code to add to your theme's `functions.php` file to change the height to
 * Features an easy, simple, lightweight, dependency-free reading progress bar for single posts.
 * Includes a settings page to customize bar color and position (top or bottom).
 * Designed for high compatibility with modern block themes and popular classic themes.
+
+== Screenshots ==
+
+1. Plugin settings page
+2. A reading progress bar appears at the bottom of the page as the user scrolls down the page.
