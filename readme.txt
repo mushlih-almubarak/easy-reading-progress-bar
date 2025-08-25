@@ -23,6 +23,8 @@ Easy Reading Progress Bar adds a sleek, customizable progress bar to your single
 * **Dependency-Free:** The frontend script does not rely on jQuery, ensuring it won't conflict with other plugins or slow down your site.
 * **Developer Friendly:** Includes a filter (`erpb_bar_height`) to programmatically change the bar's height.
 
+_This plugin was created with ❤️ by [Mushlih Almubarak](https://github.com/mushlih-almubarak) from Indonesia._
+
 == Installation ==
 
 Installing the plugin is simple!
