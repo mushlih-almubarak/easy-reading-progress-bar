@@ -48,8 +48,15 @@ add_filter( 'erpb_bar_height', function() {
 ## 🤝 Contributing
 Contributions are welcome! If you find a bug or have a feature request, please open an issue on this GitHub repository. If you'd like to contribute code, please feel free to submit a pull request.
 
-## 🤝 Donate
+## 🙌 Donate
 If you want to support me to continue developing open source projects, feel free to donate via [buymeacoffee](https://buymeacoffee.com/mushlih).
+
+## 🖼️ Screenshots
+#### Plugin settings page
+![Plugin settings page](./assets/screenshot-1.png)
+
+#### A reading progress bar appears at the bottom of the page as the user scrolls down the page.
+![A reading progress bar appears at the bottom of the page as the user scrolls down the page.](./assets/screenshot-2.png)
 
 
 _This plugin was created with ❤️ by [Mushlih Almubarak](https://github.com/mushlih-almubarak) from Indonesia._
